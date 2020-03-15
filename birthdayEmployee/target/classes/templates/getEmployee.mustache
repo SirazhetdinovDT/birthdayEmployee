@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    <h1>Список именинников</h1>
+    <table>
+        {{#employees}}
+        <tr>
+            <td><b>{{idDepartment}}</b></td>
+            <td><b>{{Fio}}</b></td>
+            <td><span>{{birthDay}}</span></td>
+        </tr>
+        {{/employees}}
+    </table>
+</div>
+</body>
+</html>
